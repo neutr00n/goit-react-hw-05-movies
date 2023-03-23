@@ -8,6 +8,7 @@ export const Wrapper = styled.div`
 
 export const Img = styled.img`
   height: 288px;
+  background-color: #dfdfdf;
 `;
 
 export const Box = styled.div`

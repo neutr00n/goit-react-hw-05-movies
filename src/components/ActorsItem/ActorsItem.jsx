@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 export const ActorsItem = ({ photo, name, character }) => {
   const imgUrl = photo
     ? `https://image.tmdb.org/t/p/w200/${photo}`
-    : 'http://tinleychamber.org/wp-content/uploads/2019/01/no-image-available.png';
+    : 'https://upload.wikimedia.org/wikipedia/commons/4/4b/User-Pict-Profil.svg';
 
   return (
     <Wrapper>
