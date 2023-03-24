@@ -40,7 +40,7 @@ const Movies = () => {
     <>
       <MovieForm handleSearchValue={setSearchParams} />
       <MoviesList items={movies} location={location} />
-      {movies.length === 0 && (
+      {movies.length === 0 && status === STATUS.RESOLVED && (
         <NotFound>We don't have any movies for this request</NotFound>
       )}
       {status === STATUS.PENDING && <Loader />}
