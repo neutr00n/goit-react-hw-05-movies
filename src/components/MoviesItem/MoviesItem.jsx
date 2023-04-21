@@ -13,10 +13,8 @@ export const MoviesItem = ({ id, title, raiting, poster, location }) => {
     ? `https://image.tmdb.org/t/p/w300/${poster}`
     : 'https://upload.wikimedia.org/wikipedia/commons/6/64/Poster_not_available.jpg';
 
-  const to = location.pathname === '/' ? `movies/${id}` : id;
-
   return (
-    <NavigLink to={`${to}`} state={{ from: location }}>
+    <NavigLink to={`/movies/${id}`} state={{ from: location }}>
       <Img src={imgUrl} alt={`${title} poster`} />
       <Box>
         <Title>{title}</Title>
